@@ -9,7 +9,7 @@ const pokemonChoice = (pokemon) => {
     // pokemonDropdown.classList = ".pokemon-cardCSS"
     if (pokemon === "Bulbasaur"){
         pokemonImage.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
-        pokemonBody.p = "pokemonBody"
+        pokemonBody.textContent = "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger."
         }
     if (pokemon === "Charizard"){
         pokemonImage.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"
@@ -23,7 +23,8 @@ const pokemonChoice = (pokemon) => {
     if (pokemon === "Garchomp"){
         pokemonImage.src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/445.png"
         }
-    pokemonCard.append(pokemonImage, pokemonBody)
+    pokemonCard.append(pokemonImage)
+    pokemonCard.append(pokemonBody)
     }
 
 pokemonDropdown.onchange = (event) => pokemonChoice(event.target.value)

@@ -1,13 +1,29 @@
+body {
+    background-color: red;
+}
+
 .pokemon-card {
     width: 300px;
     height: 500px;
-    background-color: beige;
+    background-color: blue;
     display:flex;
     border-color:black;
+    border-radius: 5px;
 }
 
 .pokemonImageCSS {
     width: 200px;
     height: 300px;
     border-color:black;
+}
+
+.pokemonContainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    
+}
+
+#pokemon{
+    width: 150px
 }
